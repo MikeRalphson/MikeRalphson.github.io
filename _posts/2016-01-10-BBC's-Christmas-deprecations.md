@@ -23,4 +23,4 @@ The Programmes mixin `versions_availability` (in my JS API this is `mProgrammesV
 
 ### Updated API files ###
 
-The (api.js)[https://raw.githubusercontent.com/Mermade/bbcparse/master/nitroApi/api.js] and (swagger.json)[https://raw.githubusercontent.com/Mermade/bbcparse/master/nitroApi/swagger.json] have been regenerated. The swagger.json is still showing as failing validation in Swagger.UI, but this is due to a typo in the swagger parser which has now been corrected.
+The [api.js](https://raw.githubusercontent.com/Mermade/bbcparse/master/nitroApi/api.js) and [swagger.json](https://raw.githubusercontent.com/Mermade/bbcparse/master/nitroApi/swagger.json) have been regenerated. The swagger.json is still showing as failing validation in Swagger.UI, but this is due to a typo in the swagger parser which has now been corrected.
