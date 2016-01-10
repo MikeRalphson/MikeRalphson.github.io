@@ -2,8 +2,11 @@
 layout: post
 title: "BBC's Christmas deprecations"
 tagline: "Dated the 24/12/2015 the BBC's Nitro API dropped some interesting deprecations"
-category: null
-tags: []
+category: APIs
+tags:
+  - bbc
+  - nitro
+  - API
 published: true
 
 ---
