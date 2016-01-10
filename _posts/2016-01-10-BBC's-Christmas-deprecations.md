@@ -19,4 +19,4 @@ Out go *nitro.api.bbci.co.uk*, *data.bbc.co.uk*, *.bbc.co.uk*, and in comes *pro
 
 ### Other changes ###
 
-The Programmes mixin versions-availability (in my JS API this is mProgrammesVersionsAvailability) has been deprecated, apparently since 10/11/2015. It may be the BBC simply forgot to change the release-status. It has been replaced by available_versions (mProgrammesAvailableVersions) which has a different response format, as documented in the nitro-schema.xsd
+The Programmes mixin versions_availability (in my JS API this is mProgrammesVersionsAvailability) has been deprecated, apparently since 10/11/2015. It may be the BBC simply forgot to change the release-status. It has been replaced by available_versions (mProgrammesAvailableVersions) which has a different response format, as documented in the nitro-schema.xsd
