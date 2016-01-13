@@ -10,6 +10,8 @@ tags:
 published: true
 
 ---
+![Xmas](/images/bbc_xmas.jpg)
+
 Just after New Year, my periodic polling of the BBC's Nitro API endpoint revealed a change in the api.xml, api.json and nitro-schema.xsd files. 
 
 Well, a simple 'git status' revealed it.
