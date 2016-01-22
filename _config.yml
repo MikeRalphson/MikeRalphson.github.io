@@ -16,7 +16,7 @@ author :
   email : mike.ralphson@gmail.com
   github : MikeRalphson
   twitter : PermittedSoc
-  feedburner : feedname
+#  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -81,7 +81,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : facebook
     disqus :
       short_name : jekyllbootstrap
     livefyre :
@@ -89,10 +89,10 @@ JB :
     intensedebate :
       account : 123abc
     facebook :
-      appid : 123
-      num_posts: 5
+      appid : 195097904177586
+      num_posts: 7
       width: 580
-      colorscheme: light
+      colorscheme: dark
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
