@@ -2,12 +2,12 @@
 layout: post
 title: Nitro goes on a January diet
 tagline: Deprecated features (finally) removed
-category: Nitro
+category: APIs
 tags:
   - bbc
   - nitro
   - deprecations
-  - api
+  - API
   - bbcstore
 published: true
 
