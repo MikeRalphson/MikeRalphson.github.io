@@ -27,12 +27,13 @@ The one new filter added this release is ````/Programmes/payment_type```` which 
 #### Summary ####
 
 Added:
-
-````fProgrammesPaymentType
+````
+fProgrammesPaymentType
 ````
 
 Removed:
-````fProgrammesAvailabilityTo
+````
+fProgrammesAvailabilityTo
 fProgrammesInitialLetterStop
 sProgrammesMostPopular
 mProgrammesPeople
