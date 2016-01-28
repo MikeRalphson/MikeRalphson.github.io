@@ -11,7 +11,7 @@ published: true
 
 ---
 First time I've seen this, the BBC Nitro API xml specification has changed, but the corresponding JSON definition has not yet been updated.
-Update: refetching the API endpoints just after midnight pulled down a modified `nitro-schema.xsd` which makes sense if the output format of the API has changed, but still not an `api.json` to match the updated `api.xml`.
+Update: refetching the API endpoints just after midnight pulled down a modified `nitro-schema.xsd` which makes sense if the output format of the API has changed, but still not an `api.json` to match the updated `api.xml`. Update: a full set of matching API definitions were retrieved on the 28/01/16.
 
 Gone in this update are the inline `image` elements across several of the feeds, which were deprecated back in July 2014 and replaced by the `images` mixin, presumably for performance reasons. This means image information is now looked up only if specifically requested.
 
