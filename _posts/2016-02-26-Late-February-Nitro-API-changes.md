@@ -20,7 +20,7 @@ The Nitro XSD schema also has a new element, 'deployment _ root' in the availabi
 
 In iBL land, ibl-nibl powered by edibl has been updated several times, the current version is v1.00 r348.
 
-```diff
+```json
          "deprecations": {
            "deprecated": [
              {
