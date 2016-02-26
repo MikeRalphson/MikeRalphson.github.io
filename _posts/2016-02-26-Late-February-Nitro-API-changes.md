@@ -19,3 +19,17 @@ In the JSON API spec, a few rogue XML namespace prefixes ('n:') have been remove
 The Nitro XSD schema also has a new element, 'deployment _ root' in the availabilty _ debug element. I must admit I hadn't noticed this in the schema before, and I'm not exactly sure how to turn on debugging information in the availabilities feed or Nitro generally. Any feedback gratefully received.
 
 In iBL land, ibl-nibl powered by edibl has been updated several times, the current version is v1.00 r348.
+
+```diff
+         "deprecations": {
+           "deprecated": [
+             {
+-              "name": "n:version_types",
++              "name": "version_types",
+               "type": "element",
+               "deprecated_since": "2015-05-05",
+-              "replaced_by": "n:types",
++              "replaced_by": "types",
+               "replacement_type": "element"
+             }
+```
