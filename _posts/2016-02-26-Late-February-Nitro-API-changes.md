@@ -17,7 +17,7 @@ The new value is `webcast`, in addition to the previous option: `ondemand`
 
 In the JSON API spec, a few rogue XML namespace prefixes (`n:`) have been removed.
 
-The Nitro XSD schema also has a new element, `deployment_root` in the `availabilty_debug` element. I must admit I hadn't noticed this in the schema before, and I'm not exactly sure how to turn on debugging information in the availabilities feed or Nitro generally. Any feedback gratefully received.
+The Nitro XSD schema also has a new element, `deployment_root` in the `availabilty_debug` element. I must admit I hadn't noticed this in the schema before, and I'm not exactly sure how to turn on debugging information in the availabilities feed or Nitro generally. Any feedback gratefully received. ;)
 
 In iBL land, ibl-nibl powered by edibl has been updated several times, the current version is v1.00 r348.
 
