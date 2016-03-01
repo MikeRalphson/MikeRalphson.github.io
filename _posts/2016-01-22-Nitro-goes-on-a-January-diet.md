@@ -19,7 +19,7 @@ The major focus of this update appears to be to remove long-deprecated features.
 
 Filters, sorts and mixins which have been deprecated since 2013 and 2014 have now been removed. These 'dinosaurs' have been hanging around giving the lie to the the BBC's stated "Nitro will change" policy. In slimming down, is Nitro inching closer to a public release?
 
-Another hint in that direction is the appearance of more draft documentation (confusingly under the 'Programmes API' rather than 'Nitro' heading) at [https://developer.bbc.co.uk/content/programmes-api](the developer.bbc.co.uk website).
+Another hint in that direction is the appearance of more draft documentation (confusingly under the 'Programmes API' rather than 'Nitro' heading) at [the developer.bbc.co.uk website](https://developer.bbc.co.uk/content/programmes-api).
 
 This documentation itself states that the /Broadcasts feed will be deprecated at some point in the future, and that clients should use the /Schedules feed instead.
 
