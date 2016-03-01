@@ -12,8 +12,7 @@ tags:
 published: true
 
 ---
-![Diet](/images/bbc_diet.jpg)
-
+<img align="left" src="/images/bbc_diet.jpg">
 Another January update to the BBC's Nitro programmes API.
 
 The major focus of this update appears to be to remove long-deprecated features.
