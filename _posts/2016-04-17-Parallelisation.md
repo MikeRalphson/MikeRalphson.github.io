@@ -70,4 +70,5 @@ to hit the rate-limiting.
 
 My first local test looked very promising, and running it on Morph.io, completed in 42 minutes. A substantial, if not 3600% improvement.
 
-The current version runs a little slower, as I've added another mixin: `mProgrammesGenreGroupings` but still completes in around an hour.
+The current version runs a little slower, as I've added another mixin: `mProgrammesGenreGroupings` but still completes in around an hour. Whether
+using `fProgrammesInitialLetterStrict` or adding a sort would improve things further is left as an excercise for the reader.
