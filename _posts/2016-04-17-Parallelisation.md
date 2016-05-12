@@ -11,10 +11,10 @@ published: true
 
 ---
 When building [Nitro9](https://morph.io/MikeRalphson/Nitro9), a tool to extract BBC programme data to a relational database for offline analysis and research,
-it became apparent that due to Nitro's performance, extracting just the available programmes (which does total about 85,000 including radio, podcasts and 
+it became apparent that due to Nitro's performance, extracting just the available programmes (which does total about 85,000 including radio, podcasts and
 TV) would take up to twelve hours to run.
- 
-Nearly all of this time was spent waiting for network responses with less than two-hundreths of 1% of that time being spent on CPU.
+
+Nearly all of this time was spent waiting for network responses.
 
 I immediately thought of parallelising the requests, something that the [Open Nitro SDK](https://github.com/Mermade/bbcparse) currently has no support for.
 
@@ -49,10 +49,10 @@ const fProgrammesMasterBrand = 'master_brand';
 Although there were several apparently binary or multiple choice filters, none of them looked balanced enough to give a reasonable amount of
 parallelisation. For example, only TV programmes can be audio-described, and most of those aren't. `fProgrammesInitialLetter` however, looked
 promising: `filter for subset of programmes with title beginning with initial letter librarian style (ignoring leading 'The', 'An' (Welsh), etc) 0-9 a-z`.
-It wasn't going to be an even distribution (see image, source 
+It wasn't going to be an even distribution (see image, source
 [Wikipedia](https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_the_first_letters_of_a_word_in_the_English_language)), but if
-it was good enough for [Zipf](https://en.wikipedia.org/wiki/Zipf%27s_law) and 
-[Yule/Simon](https://en.wikipedia.org/wiki/Yule%E2%80%93Simon_distribution), it was good enough for me. It seemed a workable plan and much 
+it was good enough for [Zipf](https://en.wikipedia.org/wiki/Zipf%27s_law) and
+[Yule/Simon](https://en.wikipedia.org/wiki/Yule%E2%80%93Simon_distribution), it was good enough for me. It seemed a workable plan and much
 simpler to implement than buckets of page numbers. Simply add one filter and a for-loop, and see if sending 36 requests at once was going
 to hit the rate-limiting.
 
