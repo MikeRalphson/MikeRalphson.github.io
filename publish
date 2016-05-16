@@ -1,0 +1,5 @@
+#!/bin/sh
+git add _posts images *.yml
+git commit -m "Publish blog"
+git push -v
+

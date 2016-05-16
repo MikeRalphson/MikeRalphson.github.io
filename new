@@ -1,0 +1,8 @@
+#!/bin/sh
+name=$1
+if [ "$name" = "" ] ; then
+  name='Untitled'
+fi
+today=`date +%Y-%m-%d`
+cp _drafts/blank.md _posts/$today-$name.md
+vi _posts/$today-$name.md
