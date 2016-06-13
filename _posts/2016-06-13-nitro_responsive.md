@@ -29,8 +29,7 @@ title of the BBC Radio Lancashire masterbrand didn't look quite right...
 
 ````
 
-I reported this late on SaturdaL schema issues) but I can't fault the speed of the corrective actions.
-Monday evening it had already been corrected.
+I reported this late on Saturday the 11/06/16 and by the following Monday evening it had already been corrected.
 
 It does seem to be BBC policy not to respond directly to unofficial emails of this kind (the same thing
 happened when I reported the iBL schema issues) but I can't fault the speed with which issues are
