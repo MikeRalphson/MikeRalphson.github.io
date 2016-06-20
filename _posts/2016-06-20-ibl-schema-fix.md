@@ -13,7 +13,7 @@ published: true
 On Thursday 16/06/16, the BBC iBL team released iBL v1.00 r388. This contained an error in the JSON schema,
 which indicates this file is hand-generated, and not validated against the JSON-schema schema.
 
-````diff
+````javascript
 diff --git a/iblApi/ibl.json b/iblApi/ibl.json
 index 94bd369..82c4f79 100644
 --- a/iblApi/ibl.json
