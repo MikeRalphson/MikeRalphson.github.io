@@ -17,7 +17,7 @@ Changes to both the BBC Nitro and iBL APIs yesterday.
 
 Nitro agained a new option in the `programmes\availability_type` of `simulcast`.
 
-The iBL API gained three new attributes in the `broadcast` response:
+The iBL API at release 391 gained three new attributes in the `broadcast` response:
 
 ````javascript
         "episode_id": "b07h0fsg",
