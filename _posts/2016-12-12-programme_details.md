@@ -24,6 +24,7 @@ It only accepts the common `page` and `page_size` filters, as well as `partner_p
 
 Speaking of `partner_pid`, a new partner pid `s0000024` for internal BBC programmes / clips was
 recently added. `s0000025` is now being used for ITV programmes broadcast on the BBC-Extra SVOD 
-service in the US / Canada (`payment_type` = `uscansvod`) 
+service in the US / Canada (`payment_type` = `uscansvod`). Update: BBC-Extra appears to have
+been rebranded as [BritBox](https://www.theguardian.com/media/2016/dec/13/bbc-and-itv-to-launch-britbox-on-demand-service-in-us).
 
 Being undocumented, this information is subject to change without notice.
