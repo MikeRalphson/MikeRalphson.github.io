@@ -14,11 +14,14 @@ Just added to the Open Nitro SDK is a new (?) undocumented feed: `programme_deta
 
 This feed is a simple way of obtaining details from the `programmes` feed for a particular `pid`
 without having to specify a number of mixins. It may be present for cacheability reasons, i.e. 
-to improve performance on a very common use-case.
+to improve performance on a very common use-case, or it may be present as a direct replacement
+for the `/programmes` API, e.g. `bbc.co.uk/programmes/{pid}.json` for when that service is
+finally turned off.
 
 Information for `ancestor_titles`, `available_versions` (including the new `territory` attribute),
 `available_webcasts`, `available_simulcasts` and `genre_groupings` is returned as per the 
-existing mixins on the `programmes` feed.
+existing mixins on the `programmes` feed. When called with a brand or series PID, only the top
+level information is returned, not a list of episodes / playlist.
 
 It only accepts the common `page` and `page_size` filters, as well as `partner_pid`.
 
