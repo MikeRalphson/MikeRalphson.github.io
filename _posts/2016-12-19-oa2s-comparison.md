@@ -14,20 +14,21 @@ published: true
 ---
 Something a little different for this blog; a comparison of four tools which aim to do a similar job, to convert 
 [OpenApi / Swagger](https://www.openapis.org/specification/repo) definitions into simple markdown which can be rendered by 
-[Slate]((https://github.com/lord/slate) (or one of its ports). Slate itself and its alternative implementations / ports will 
+[Slate](https://github.com/lord/slate) (or one of its ports). Slate itself and its alternative implementations / ports will 
 likely be the subject of a follow-up post on this blog.
 
 Disclaimer: the author of this blog post is also the author of one of the tools compared (`widdershins`), and 
 [shins](https://github.com/mermade/shins), the Node.js port of Slate used here to convert each tool's Slate markdown into HTML.
 
 When I started `widdershins` I could not find any tools to directly convert OpenAPI / Swagger definitions to Slate, except for
-`swagger2slate` which is written in PHP. Some weeks later on and two more tools, developed in Node.js (like `widdershins`) have
-appeared, hence this comparison.
+`swagger2slate` which is written in PHP and was at the time in an unmaintained state. Some weeks later on and two more tools, 
+developed in Node.js (like `widdershins`) have appeared, and `swagger2slate` has seen further development, hence this comparison.
 
-Because `shins` uses the common-mark compatible [markdown-it](https://github.com/markdown-it/markdown-it), as its markdown
+Because `shins` uses the common-mark compatible [markdown-it](https://github.com/markdown-it/markdown-it) as its markdown
 processor, there may be differences in the rendered HTML compared to that produced by Ruby Slate.
 
-Each tool may be optimised for a particular Slate CSS theme. This is not taken into account here.
+Each tool may be optimised for a particular Slate CSS theme. This is not taken into account here, but where an example site
+is provided, it is linked to below.
 
 Only the example `petstore.json` has been used so far to compare each tool, which may not demonstrate all features to best effect.
 
@@ -54,13 +55,15 @@ produce both internal and external-facing documentation from the same OpenAPI de
 
 ### Areas for improvement
 
-* Some markdown is not common-mark compatible, which results in `shins` rendering it sub-optimally. This can be seen in unconverted
-headings which are followed directly by `code` blocks. I think it is the simple lack of a blank line which causes this problem.
+* No option for code-samples
+* Authentication information is not shown
 * Where some optional information in the OpenAPI definition is missing, `openapi2slate` renders `undefined` in the table-of-contents
 footer.
 * It would be nice to be able to call a documented API to produce the markdown programmatically, rather than only as a command-line
 tool which outputs to STDOUT
-* No option for code-samples
+* Some markdown is not common-mark compatible, which results in `shins` at least rendering it sub-optimally. This can be seen in 
+unconverted headings. This may be due to an amount of HTML which `openapi2slate` mixes in with the markdown.
+* No explicit license, except in the project's `package.json` (BSD-3-Clause)
 
 As documented in the project's [README](https://github.com/scrive/openapi2slate/blob/master/README.md), `openapi2slate` 
 has a few limitations / design decisions to be aware of:
@@ -68,4 +71,33 @@ has a few limitations / design decisions to be aware of:
 > Dereferncing(sic) is not properly implemented, instead it tries to dereference the file for you and use that. YMMV.
 > API Schema works fairly OK, some features may be missing...
 > We render things in Slate Markdown that fits our needs and customisations, so this may not work well for you!
+
+## [Swagger-to-Slate](https://github.com/lavkumarv/swagger-to-slate)
+
+![Swagger-to-slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swagger-to-slate.png?raw=true)
+
+`Swagger-to-Slate` is also a Node.js-based tool, under the MIT license, developed by 
+[Lav Kumar Vishwakarma](https://github.com/lavkumarv), which describes itself as
+
+> Node module which converts the swagger.json or YAML file into slate markdown 
+
+### What Swagger-to-Slate gets right
+
+* Parameters and responses are clearly rendered in table form
+* Although not documented, it is easy enough to call the conversion programmatically
+* Handles yaml as a well as json formatted definitions
+* Available as a module on [npm](https://www.npmjs.com/package/swagger-to-slate)
+* Explicitly MIT Licensed
+
+### Areas for improvement
+
+* Header metadata about the API such as the endpoint URL, contact and license information is not shown
+* Authentication scopes are not shown
+* `swagger-to-slate` uppercases the table-of-contents, making it look somewhat shouty
+* Although `shell` is defined as a language tab, no examples are shown yet
+* Minor common-mark glitches, e.g. emphasis in `code` blocks not rendering
+* No link to an example HTML output on the project page
+
+`Swagger-to-Slate` includes Slate's `_error.md` file by default, so you need to remember to update this to include your 
+API documentation.
 
