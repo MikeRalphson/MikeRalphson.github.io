@@ -103,7 +103,7 @@ API documentation.
 
 ## [Swagger2Slate](https://github.com/e96/swagger2slate)
 
-![Swagger2Slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swagger2Slate.png?raw=true)
+![Swagger2Slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swagger2slate.png?raw=true)
 
 `Swagger2Slate` is in some way the granddaddy of all these tools, predating them by about 18-months.
 
@@ -136,3 +136,4 @@ version of the code to [heroku](https://swagger2slate.herokuapp.com) allowed me 
 * Links to response models actually link back to tags if name matches
 * Documentation is confusing, as it implies you have to start with a PHP application containing Swagger annotations. This isn't 
 the case, and `Swagger2Slate` happily works on any OpenAPI definition, no matter how it is generated.
+* No link to example generated HTML on the project page
