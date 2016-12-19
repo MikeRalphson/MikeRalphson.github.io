@@ -36,7 +36,7 @@ First up is:
 
 ## [OpenApi2Slate](https://github.com/scrive/openapi2slate)
 
-![OpenApi2Slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/openapi2slate.png?raw=true)
+[![OpenApi2Slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/openapi2slate.png?raw=true)](https://mermade.github.io/oa2s-comparison/openapi2slate.html)
 
 `openapi2slate` is a Node.js-based tool developed by [Scrive](https://github.com/scrive/) which describes itself as
 
