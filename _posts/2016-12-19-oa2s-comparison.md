@@ -101,3 +101,38 @@ has a few limitations / design decisions to be aware of:
 `Swagger-to-Slate` includes Slate's `_error.md` file by default, so you need to remember to update this to include your 
 API documentation.
 
+## [Swagger2Slate](https://github.com/e96/swagger2slate)
+
+![Swagger2Slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swagger2Slate.png?raw=true)
+
+`Swagger2Slate` is in some way the granddaddy of all these tools, predating them by about 18-months.
+
+It is written as a PHP application and the project description is
+
+> Convert swagger api documentation (http://swagger.io) to slate static html page (https://github.com/tripit/slate) 
+
+I wasn't originally going to include `Swagger2Slate` in this comparison, because by the author's own admission it was
+no-longer maintained, had several outstanding issues, and being written in PHP wasn't something that was immediately easy
+for me to test (much like Slate, being written in Ruby - and not supporting Windows, which may be the reason a number of
+Node.js-based ports exist).
+
+However, as of this writing, the latest commit to `Swagger2Slate` was only five hours ago, and deploying a slightly hacked
+version of the code to [heroku](https://swagger2slate.herokuapp.com) allowed me to see the example output.
+
+### What Swagger2Slate gets right
+
+* Authentication information is displayed (but not oAuth scopes)
+* The table-of-contents uses operation summaries / descriptions as is nicely readable
+* Produced and Consumed MIME-Types are shown in the right-hand pane
+* HTML examples are used for the right-hand-pane
+* Input and output models are shown in the right-hand-pane
+* Model names are shown not just `Object`, and are hyperlinks 
+* No visible markdown glitches
+
+### Areas for improvement
+
+* Some header metadata, such as license and contact information is not shown
+* Sometimes difficult to tell input from output models
+* Links to response models actually link back to tags if name matches
+* Documentation is confusing, as it implies you have to start with a PHP application containing Swagger annotations. This isn't 
+the case, and `Swagger2Slate` happily works on any OpenAPI definition, no matter how it is generated.
