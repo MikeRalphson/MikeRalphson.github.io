@@ -137,3 +137,35 @@ version of the code to [heroku](https://swagger2slate.herokuapp.com) allowed me 
 * Documentation is confusing, as it implies you have to start with a PHP application containing Swagger annotations. This isn't 
 the case, and `Swagger2Slate` happily works on any OpenAPI definition, no matter how it is generated.
 * No link to example generated HTML on the project page
+
+## [Widdershins](https:/github.com/mermade/widdershins)
+
+![Widdershins screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/widdershins.png?raw=true)
+
+As above, `Widdershins` is written by the author of this blog post, and the author of `shins`, so you might want to stop
+reading here!
+
+### What Widdershins gets right
+
+* All heading / metadata is shown, including oAuth authentication scopes
+* Tag-level external docs are shown
+* Response codes are linked to official RFC descriptions by default
+* Code samples are shown for shell, HTTP, Javascript, Node.Js, Ruby, Python and Java by default
+* Authentication methods for each operation are shown
+* Responses are shown in both JSON and XML if matching `produces` MIME-types are detected
+* Responses are shown as examples, not just schemas
+* Each section and code-sample is built from user-overridable templates
+* No known markdown glitches
+* Explicitly MIT Licensed
+* Available as a module on [npm](https://www.npmjs.com/package/widdershins)
+* Has a defined and documented API for converting definitions programmatically
+
+### Areas for improvement
+
+* Because of the extensive metadata heading, the right-most panel looks empty at first glance
+* Authentication information may be better rendered as tables
+* `Widdershins` uses operationIds if available for the table-of-contents. This may not be optimal for human-readable documentation
+* Complex types are shown as `Object`, not the model names
+* Default code samples are very generic, and incomplete when it comes to required parameters
+* `Widdershins` is in hindsight not the most descriptive name, and might imply it only works with `shins`. This is not the case,
+`Widdershins` should work with the original Ruby `Slate` or any of its ports / forks / derivatives.
