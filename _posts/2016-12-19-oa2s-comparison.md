@@ -74,7 +74,7 @@ has a few limitations / design decisions to be aware of:
 
 ## [Swagger-to-Slate](https://github.com/lavkumarv/swagger-to-slate)
 
-![Swagger-to-slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swaggerToSlate.png?raw=true)
+[![Swagger-to-slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swaggerToSlate.png?raw=true)](https://mermade.github.io/oa2s-comparison/swagger-to-slate.html)
 
 `Swagger-to-Slate` is also a Node.js-based tool, under the MIT license, developed by 
 [Lav Kumar Vishwakarma](https://github.com/lavkumarv), which describes itself as
@@ -103,7 +103,7 @@ API documentation.
 
 ## [Swagger2Slate](https://github.com/e96/swagger2slate)
 
-![Swagger2Slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swagger2slate.png?raw=true)
+[![Swagger2Slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swagger2slate.png?raw=true)](https://mermade.github.io/oa2s-comparison/swagger2slate.html)
 
 `Swagger2Slate` is in some way the granddaddy of all these tools, predating them by about 18-months.
 
@@ -140,7 +140,7 @@ the case, and `Swagger2Slate` happily works on any OpenAPI definition, no matter
 
 ## [Widdershins](https:/github.com/mermade/widdershins)
 
-![Widdershins screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/widdershins.png?raw=true)
+[![Widdershins screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/widdershins.png?raw=true)](https://mermade.github.io/oa2s-comparison/widdershins.html)
 
 As above, `Widdershins` is written by the author of this blog post, and the author of `shins`, so you might want to stop
 reading here!
