@@ -40,7 +40,7 @@ First up is:
 
 `openapi2slate` is a Node.js-based tool developed by [Scrive](https://github.com/scrive/) which describes itself as
 
-> An opinionated converter from OpenAPI to Slate markdown
+> An opinionated (and work in progress) converter from OpenAPI to Slate markdown
 
 ### What OpenAPI2Slate gets right
 
@@ -107,7 +107,7 @@ API documentation.
 
 `Swagger2Slate` is in some way the granddaddy of all these tools, predating them by about 18-months.
 
-It is written as a PHP application and the project description is
+It is written as a PHP application by [Andrey Putilov](https://github.com/m8rge) and the project description is
 
 > Convert swagger api documentation (http://swagger.io) to slate static html page (https://github.com/tripit/slate) 
 
@@ -122,7 +122,7 @@ version of the code to [heroku](https://swagger2slate.herokuapp.com) allowed me 
 ### What Swagger2Slate gets right
 
 * Authentication information is displayed (but not oAuth scopes)
-* The table-of-contents uses operation summaries / descriptions as is nicely readable
+* The table-of-contents uses operation summaries / descriptions and is nicely readable
 * Produced and Consumed MIME-Types are shown in the right-hand pane
 * HTML examples are used for the right-hand-pane
 * Input and output models are shown in the right-hand-pane
