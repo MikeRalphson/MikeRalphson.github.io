@@ -74,7 +74,7 @@ has a few limitations / design decisions to be aware of:
 
 ## [Swagger-to-Slate](https://github.com/lavkumarv/swagger-to-slate)
 
-![Swagger-to-slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swagger-to-slate.png?raw=true)
+![Swagger-to-slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/swaggerToSlate.png?raw=true)
 
 `Swagger-to-Slate` is also a Node.js-based tool, under the MIT license, developed by 
 [Lav Kumar Vishwakarma](https://github.com/lavkumarv), which describes itself as
