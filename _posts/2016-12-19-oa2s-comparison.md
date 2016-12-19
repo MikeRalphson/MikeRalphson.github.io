@@ -155,8 +155,13 @@ reading here!
 * Responses are shown in both JSON and XML if matching `produces` MIME-types are detected
 * Responses are shown as examples, not just schemas
 * Each section and code-sample is built from user-overridable templates
+* Code samples can be read from [vendor-extensions](https://github.com/Rebilly/ReDoc/blob/master/docs/redoc-vendor-extensions.md#operation-object-vendor-extensions)
+within the OpenAPI definition
 * No known markdown glitches
 * Explicitly MIT Licensed
+* Extensive test suite (almost 800 definitions)
+* Processes JSON or YAML format definitions
+* Configurable syntax highlighting themes (almost [70 themes](https://highlightjs.org/static/demo/))
 * Available as a module on [npm](https://www.npmjs.com/package/widdershins)
 * Has a defined and documented API for converting definitions programmatically
 
