@@ -38,7 +38,7 @@ First up is:
 
 [![OpenApi2Slate screenshot](https://github.com/Mermade/oa2s-comparison/blob/master/docs/openapi2slate.png?raw=true)](https://mermade.github.io/oa2s-comparison/openapi2slate.html)
 
-`openapi2slate` is a Node.js-based tool developed by [Scrive](https://github.com/scrive/) which describes itself as
+`openapi2slate` is a BSD-licensed Node.js-based tool developed by [Scrive](https://github.com/scrive/) which describes itself as
 
 > An opinionated (and work in progress) converter from OpenAPI to Slate markdown
 
@@ -124,7 +124,7 @@ version of the code to [heroku](https://swagger2slate.herokuapp.com) allowed me 
 * Authentication information is displayed (but not oAuth scopes)
 * The table-of-contents uses operation summaries / descriptions and is nicely readable
 * Produced and Consumed MIME-Types are shown in the right-hand pane
-* HTML examples are used for the right-hand-pane
+* HTTP examples are used for the right-hand-pane
 * Input and output models are shown in the right-hand-pane
 * Model names are shown not just `Object`, and are hyperlinks 
 * No visible markdown glitches
@@ -133,7 +133,7 @@ version of the code to [heroku](https://swagger2slate.herokuapp.com) allowed me 
 
 * Some header metadata, such as license and contact information is not shown
 * Sometimes difficult to tell input from output models
-* Links to response models actually link back to tags if name matches
+* Links to response models actually link back to tags if the name matches
 * Documentation is confusing, as it implies you have to start with a PHP application containing Swagger annotations. This isn't 
 the case, and `Swagger2Slate` happily works on any OpenAPI definition, no matter how it is generated.
 * No link to example generated HTML on the project page
