@@ -52,6 +52,7 @@ when the documentation consists of more than just simple API calls and responses
 * Available as a package on [npm](https://www.npmjs.com/package/openapi2slate)
 * `openapi2slate` can use OpenAPI vendor extensions to mark tags and parameters as internal use only, making it simple to 
 produce both internal and external-facing documentation from the same OpenAPI definition.
+* Explicitly licensed under the BSD-3-Clause license.
 
 ### Areas for improvement
 
@@ -63,7 +64,6 @@ footer.
 tool which outputs to STDOUT
 * Some markdown is not common-mark compatible, which results in `shins` at least rendering it sub-optimally. This can be seen in 
 unconverted headings. This may be due to an amount of HTML which `openapi2slate` mixes in with the markdown.
-* No explicit license, except in the project's `package.json` (BSD-3-Clause)
 
 As documented in the project's [README](https://github.com/scrive/openapi2slate/blob/master/README.md), `openapi2slate` 
 has a few limitations / design decisions to be aware of:
