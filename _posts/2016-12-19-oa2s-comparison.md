@@ -170,7 +170,7 @@ within the OpenAPI definition
 * Because of the extensive metadata heading, the right-most panel looks empty at first glance
 * Authentication information may be better rendered as tables
 * `Widdershins` uses operationIds if available for the table-of-contents. This may not be optimal for human-readable documentation
-* --Complex types are shown as `Object`, not the model names--
+* ~~Complex types are shown as `Object`, not the model names~~
 * Default code samples are very generic, and incomplete when it comes to required parameters
 * `Widdershins` is in hindsight not the most descriptive name, and might imply it only works with `shins`. This is not the case,
 `Widdershins` should work with the original Ruby `Slate` or any of its ports / forks / derivatives.
