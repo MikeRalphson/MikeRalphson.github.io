@@ -168,7 +168,7 @@ within the OpenAPI definition
 ### Areas for improvement
 
 * Because of the extensive metadata heading, the right-most panel looks empty at first glance
-* Authentication information may be better rendered as tables
+* ~~Authentication information may be better rendered as tables~~
 * `Widdershins` uses operationIds if available for the table-of-contents. This may not be optimal for human-readable documentation
 * ~~Complex types are shown as `Object`, not the model names~~
 * Default code samples are very generic, and incomplete when it comes to required parameters
