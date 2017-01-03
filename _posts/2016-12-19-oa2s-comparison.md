@@ -25,7 +25,7 @@ When I started `widdershins` I could not find any tools to directly convert Open
 developed in Node.js (like `widdershins`) have appeared, and `swagger2slate` has seen further development, hence this comparison.
 
 Because `shins` uses the common-mark compatible [markdown-it](https://github.com/markdown-it/markdown-it) as its markdown
-processor, there may be differences in the rendered HTML compared to that produced by Ruby Slate.
+processor, there may be differences in the rendered HTML compared to that produced by `redcarpet`, the markdown library used by Ruby Slate.
 
 Each tool may be optimised for a particular Slate CSS theme. This is not taken into account here, but where an example site
 is provided, it is linked to below.
