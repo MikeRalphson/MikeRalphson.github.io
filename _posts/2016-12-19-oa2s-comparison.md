@@ -27,10 +27,14 @@ developed in Node.js (like `widdershins`) have appeared, and `swagger2slate` has
 Because `shins` uses the common-mark compatible [markdown-it](https://github.com/markdown-it/markdown-it) as its markdown
 processor, there may be differences in the rendered HTML compared to that produced by `redcarpet`, the markdown library used by Ruby Slate.
 
-Each tool may be optimised for a particular Slate CSS theme. This is not taken into account here, but where an example site
-is provided, it is linked to below.
+Each tool may be optimised for a particular Slate CSS theme. This is not taken into account here, but where an example site is provided, it is linked to below.
 
 Only the example `petstore.json` has been used so far to compare each tool, which may not demonstrate all features to best effect.
+
+If you use Java and/or Swagger-CodeGen, two other projects which have been brought to my attention may be worth looking at:
+
+* https://github.com/buremba/swagger-slate
+* https://github.com/regga-ws/swagger-codegen-slate ([screenshot](https://camo.githubusercontent.com/0ed0b72c2a786c97354c95b00909645e8dfe9bd4/68747470733a2f2f646f63732e676f6f676c652e636f6d2f612f657374656c612e66722f75633f61757468757365723d302669643d30422d42686a7736706c5264734d55314c624568755a546835644738266578706f72743d646f776e6c6f6164), [example](http://api.rakam.io/))
 
 First up is:
 
@@ -167,10 +171,9 @@ within the OpenAPI definition
 
 ### Areas for improvement
 
-* Because of the extensive metadata heading, the right-most panel looks empty at first glance
-* ~~Authentication information may be better rendered as tables~~
 * `Widdershins` uses operationIds if available for the table-of-contents. This may not be optimal for human-readable documentation
+* `Widdershins` is in hindsight not the most descriptive name, and might imply it only works with `shins`. This is not the case, `Widdershins` should work with the original Ruby `Slate` or any of its ports / forks / derivatives.
+* ~~Because of the extensive metadata heading, the right-most panel looks empty at first glance~~
+* ~~Authentication information may be better rendered as tables~~
 * ~~Complex types are shown as `Object`, not the model names~~
 * ~~Default code samples are very generic, and incomplete when it comes to required parameters~~
-* `Widdershins` is in hindsight not the most descriptive name, and might imply it only works with `shins`. This is not the case,
-`Widdershins` should work with the original Ruby `Slate` or any of its ports / forks / derivatives.
